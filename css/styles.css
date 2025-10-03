@@ -1,0 +1,170 @@
+/* Reglas generales */
+* {
+    box-sizing: border-box;
+}
+
+body, h1 {
+    margin: 0;
+}
+
+h1, h2, h3, .intro a {
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+/* Título principal */
+#titulo {
+    text-align: center;
+    margin: 30px 0;
+    text-decoration: underline;
+}
+
+/* Nav */
+nav {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    min-height: 8vh;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 83.33%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+/* Main y footer */
+main, footer {
+    padding: 15px 30px;
+}
+
+/* Sections */
+section {
+    width: 83.33%;
+    margin: 0 auto 40px;
+}
+
+.section-desc-container {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Intro: info personal y proyectos */
+.intro {
+    margin: 10px;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    border-radius: 20px;
+    gap: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro a {
+    background-color: #000;
+    padding: 12px 25px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.intro a:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+/* Imágenes */
+#foto-perfil,
+.imgs-projects {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imgs-projects {
+    width: 80%;
+}
+
+/* Skills */
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 50vh;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.skill img {
+    width: 40%;
+    height: auto;
+    margin-top: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Section containers */
+.section-container,
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+    .skills {
+        gap: 15px;
+    }
+
+    .skill {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro div, .special-width {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 80%;
+    }
+}
